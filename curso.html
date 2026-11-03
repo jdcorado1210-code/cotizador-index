@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curso | Instituto ProGramador</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-pagina="curso">
+<header class="barra">
+<a class="logo" href="index.html">Instituto ProGramador</a>
+<nav><span id="saludo"></span><button id="salir" type="button">Salir</button></nav>
+</header>
+<main class="contenedor">
+<section class="panel">
+<h2>Mis datos</h2>
+<div id="misDatos"></div>
+</section>
+<section id="panelAdmin" class="panel" hidden>
+<h2>Panel del administrador</h2>
+<div class="tabla"><table>
+<thead><tr><th>Estudiante</th><th>Correo</th><th>Intentos</th><th>Mejor nota</th></tr></thead>
+<tbody id="tablaAdmin"></tbody>
+</table></div>
+</section>
+<h1>Introducción a la programación web</h1>
+<section class="panel">
+<h2>Módulo 1. Cómo funciona la web</h2>
+<p>Cuando escribes una dirección en el navegador, tu computadora le pide una página a un servidor y este responde con archivos. Cada página se construye con tres lenguajes que se reparten el trabajo.</p>
+<img src="img/estructura.svg" alt="HTML da la estructura, CSS el diseño y JavaScript el comportamiento">
+<p>Para profundizar, revisa la <a href="https://developer.mozilla.org/es/docs/Learn" target="_blank" rel="noopener">guía de aprendizaje de MDN</a>.</p>
+</section>
+<section class="panel">
+<h2>Módulo 2. HTML y CSS</h2>
+<p>HTML organiza el contenido con etiquetas como títulos, párrafos, listas y enlaces. El atributo <code>href</code> de la etiqueta <code>a</code> indica a dónde lleva cada enlace. CSS se encarga del aspecto: colores, tamaños y posición, por ejemplo con la propiedad <code>color</code>.</p>
+<p>Referencias: <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener">HTML en MDN</a> y <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank" rel="noopener">CSS en MDN</a>.</p>
+</section>
+<section class="panel">
+<h2>Módulo 3. JavaScript y hosting</h2>
+<p>JavaScript se ejecuta en el navegador y permite validar formularios, guardar datos y reaccionar a lo que hace la persona. Para publicar un sitio estático puedes usar servicios gratuitos como GitHub Pages.</p>
+<iframe src="https://www.youtube.com/embed/UB1O30fR-EE" title="Video del curso" allowfullscreen></iframe>
+<p>Más información: <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.</p>
+</section>
+<section class="panel">
+<h2>Evaluación</h2>
+<p>Son 7 preguntas. Necesitas 70 puntos para aprobar y obtener tu diploma.</p>
+<form id="formExamen">
+<div id="listaPreguntas"></div>
+<button type="submit">Enviar evaluación</button>
+</form>
+</section>
+<section id="resultado" class="panel" hidden>
+<h2>Resultado</h2>
+<p id="textoNota"></p>
+<p id="estadoNota"></p>
+<div id="diploma" class="diploma" hidden>
+<p>El Instituto ProGramador certifica que</p>
+<h2 id="dipNombre"></h2>
+<p>aprobó el curso Introducción a la programación web con una nota de <strong id="dipNota"></strong>.</p>
+<p id="dipFecha"></p>
+</div>
+<button type="button" id="imprimir" hidden>Imprimir diploma</button>
+</section>
+</main>
+<footer class="pie">Instituto ProGramador, proyecto de Programación II. Autor: Juan David Corado Montenegro</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

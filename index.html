@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instituto ProGramador | Cursos en línea</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-pagina="inicio">
+<header class="barra">
+<a class="logo" href="index.html">Instituto ProGramador</a>
+<nav><a href="#cursos">Cursos</a><a href="#registro">Inscripción</a></nav>
+</header>
+<main>
+<section class="portada">
+<h1>Aprende a crear páginas web desde cero</h1>
+<p>Cursos cortos en línea con lecciones, videos, una evaluación y diploma al aprobar.</p>
+<a class="boton" href="#registro">Inscribirme</a>
+</section>
+<section id="cursos" class="contenedor">
+<h2>Cursos disponibles</h2>
+<div class="tarjetas">
+<article class="tarjeta"><h3>Introducción a la programación web</h3><p>HTML, CSS y JavaScript en tres módulos. Incluye evaluación de 7 preguntas. Duración: 8 horas.</p></article>
+<article class="tarjeta apagada"><h3>Bases de datos</h3><p>Modelo relacional y consultas SQL. Disponible próximamente.</p></article>
+<article class="tarjeta apagada"><h3>Algoritmos</h3><p>Lógica y resolución de problemas. Disponible próximamente.</p></article>
+</div>
+</section>
+<section id="registro" class="contenedor dos-col">
+<form id="formRegistro" class="panel" novalidate>
+<h2>Crear cuenta</h2>
+<label>Nombre completo<input type="text" name="nombre"></label>
+<label>Correo electrónico<input type="email" name="correo"></label>
+<label>Teléfono (8 dígitos)<input type="text" name="telefono" inputmode="numeric"></label>
+<label>Usuario<input type="text" name="usuario"></label>
+<label>Contraseña<input type="password" name="clave"></label>
+<p class="aviso" id="avisoRegistro"></p>
+<button type="submit">Registrarme</button>
+</form>
+<form id="formIngreso" class="panel">
+<h2>Ya tengo cuenta</h2>
+<label>Usuario<input type="text" name="usuario" required></label>
+<label>Contraseña<input type="password" name="clave" required></label>
+<p class="aviso" id="avisoIngreso"></p>
+<button type="submit">Ingresar</button>
+</form>
+</section>
+<section id="resumen" class="contenedor" hidden>
+<div class="panel">
+<h2>Registro completado</h2>
+<div id="resumenDatos"></div>
+<a class="boton" href="curso.html">Entrar al curso</a>
+</div>
+</section>
+</main>
+<footer class="pie">Instituto ProGramador, proyecto de Programación II. Autor: Juan David Corado Montenegro</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
